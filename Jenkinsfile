@@ -29,6 +29,14 @@ node {
             def image2 = docker.build("${DOCKERHUB_REPO}:latest", "./docker")
         }
     }
+    
+        stage('Test'){
+      steps{
+        sh 'node --version'
+        sh 'echo $(curl localhost:8080)'
+      }
+   }
+
 
     /*
     stage ('Docker Push') {
