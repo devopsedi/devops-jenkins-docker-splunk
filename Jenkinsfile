@@ -32,7 +32,7 @@ node {
     
     stage('Test'){
         docker.withTool('docker-latest') {
-            sh "printenv"
+            sh "docker images"
       }
    }
 
