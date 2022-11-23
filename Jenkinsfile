@@ -30,9 +30,9 @@ node {
         }
     }
     
-        stage('Test'){
-      steps{
-        sh 'sudo cat /var/log/webapp'
+    stage('Test'){
+        docker.withTool('docker-latest') {
+            sh "printenv"
       }
    }
 
