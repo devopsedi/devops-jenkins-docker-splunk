@@ -32,8 +32,7 @@ node {
     
         stage('Test'){
       steps{
-        sh 'docker images'
-        sh 'docker network list'
+        sh 'sudo cat /var/log/webapp'
       }
    }
 
