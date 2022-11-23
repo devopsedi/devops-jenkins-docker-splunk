@@ -31,8 +31,10 @@ node {
     }
     
     stage('Test'){
+        steps {
             sh "docker images"
-            sh "docker network list"            
+            sh "docker network list"
+        }
    }
 
 
