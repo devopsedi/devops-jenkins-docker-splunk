@@ -32,8 +32,8 @@ node {
     
         stage('Test'){
       steps{
-        sh 'node --version'
-        sh 'echo $(curl localhost:8080)'
+        sh 'docker images'
+        sh 'docker network list'
       }
    }
 
