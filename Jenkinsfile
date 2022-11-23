@@ -1,10 +1,9 @@
-
 //START-OF-SCRIPT
 node {
     def SPLUNK_HOSTNAME='splunk'
     def DOCKER_HOME = tool name: 'docker-latest'
     def GRADLE_HOME = tool name: 'gradle-4.10.2', type: 'hudson.plugins.gradle.GradleInstallation'
-    def REPO_URL = 'https://github.com/devopsedi/devops-webapp.git'
+    def REPO_URL = 'https://github.com/cloudacademy/devops-webapp.git'
     def DOCKERHUB_REPO = 'cloudacademydevops/webapp'
 
     stage('Clone') {        
