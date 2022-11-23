@@ -33,6 +33,7 @@ node {
     stage('Test'){
         docker.withTool('docker-latest') {
             sh "docker images"
+            sh "docker network list"            
       }
    }
 
